@@ -7,10 +7,19 @@ Plug 'tpope/vim-surround'
 Plug 'othree/html5.vim'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'joshdick/onedark.vim', {'branch': 'main', 'tag': 'one-dark-warm'}
+
+" Using Vim-Plug
+Plug 'navarasu/onedark.nvim'
+"Plug 'tpope/vim-django'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 "colorschemes
-colorscheme monokai
+"colorscheme monokai
+colorscheme onedark
+"colorscheme onedark-warm
+
 
 syntax on
 syntax enable
