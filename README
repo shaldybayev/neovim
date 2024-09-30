@@ -1,0 +1,56 @@
+Neovim Configuration
+This Neovim configuration is set up with various plugins for an enhanced development experience. 
+The configuration is managed using Vim-Plug for plugin management, 
+and includes tools for code formatting, autocompletion, and syntax highlighting, among others.
+
+
+Plugins
+NERDTree: File system explorer for navigating files. Mapped to Ctrl + N for easy toggling.
+vim-airline: Status/tabline utility with custom symbols and Powerline fonts support.
+vim-monokai & onedark: Color schemes. The default is set to onedark.
+emmet-vim: Plugin for expanding Emmet abbreviations in HTML and CSS.
+vim-surround: Easily delete, change, and add surroundings like parentheses or quotes.
+html5.vim: HTML5 syntax support.
+vim-prettier: Integrates Prettier for automatic code formatting.
+coc.nvim: Intellisense engine for Neovim with autocompletion, diagnostics, and language server support.
+nvim-web-devicons: Provides file-type icons.
+
+
+General Settings
+Syntax highlighting: Enabled with syntax on and syntax enable.
+Indentation: Tabs are set to 4 spaces (tabstop=4, shiftwidth=4).
+Line numbers: Enabled (set number).
+Swap files: Disabled (set noswapfile).
+Color column: Set at 79 to indicate line length (set colorcolumn=79).
+Window splitting: Windows open to the right and below (set splitright and set splitbelow).
+
+
+Autocompletion & Formatting
+coc.nvim handles autocompletion and language server integration. Triggered via <Tab> and <CR>.
+Prettier auto-formats files on save for JavaScript, JSON, HTML, and more.
+Additional settings for formatting specific filetypes are set with formatexpr=CocAction('formatSelected').
+
+
+Custom Mappings
+Window Navigation:
+
+Ctrl + J to move down
+Ctrl + K to move up
+Ctrl + L to move right
+Ctrl + H to move left
+NERDTree: Mapped to Ctrl + N for toggling.
+
+Emmet: Triggered with Ctrl + Y, followed by a command.
+
+
+Airline Configuration
+Powerline fonts enabled for vim-airline.
+Custom symbols for branches, line numbers, and other indicators are set for a clean look.
+
+
+Additional Features
+24-bit color support: Enabled for Neovim with termguicolors.
+Sign column: Always visible for diagnostics (set signcolumn=yes).
+Trailing whitespace: Automatically removed on saving .py files.
+This configuration provides a modern Neovim environment, ideal for web development with HTML, 
+JavaScript, and related technologies.
