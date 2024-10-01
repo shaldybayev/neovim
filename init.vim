@@ -8,6 +8,7 @@ Plug 'othree/html5.vim'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'joshdick/onedark.vim', {'branch': 'main', 'tag': 'one-dark-warm'}
+Plug 'norcalli/nvim-colorizer.lua'
 
 " Using Vim-Plug
 Plug 'navarasu/onedark.nvim'
@@ -54,6 +55,9 @@ let g:prettier#config#arrow_parens = 'always'
 autocmd BufWritePre *.js,*.jsx,*.json,*.yaml,*.scss,*.md,*.vue,*.html Prettier
 let g:prettier#exec_cmd_path = 'usr/local/bin/prettier'
 
+" Активация Colorizer
+autocmd VimEnter * silent! lua require'colorizer'.setup()
+autocmd FileType css,scss,html,vue,js silent! ColorizerAttachToBuffer
 
 " Включить автокомплит тегов при вводе
 let g:html5_close_autocomment = 1
