@@ -64,6 +64,9 @@ let g:html5_close_autocomment = 1
 let g:html5_event_handler = "1"
 " Дополнительные настройки для подстветки синтаксиса HTML
 autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+" Дополнительные настройки для CSS
+autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+
 
 set list
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
