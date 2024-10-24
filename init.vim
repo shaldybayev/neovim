@@ -16,6 +16,9 @@ Plug 'navarasu/onedark.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
+" Привязка F5 для запуска текущего JavaScript файла
+autocmd FileType javascript nnoremap <buffer> <F5> :w<CR>:!node %<CR>
+
 "colorschemes
 "colorscheme monokai
 colorscheme onedark
