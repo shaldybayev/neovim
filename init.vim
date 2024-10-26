@@ -1,4 +1,6 @@
 call plug#begin()
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
 Plug 'sickill/vim-monokai'
@@ -15,6 +17,9 @@ Plug 'navarasu/onedark.nvim'
 "Plug 'tpope/vim-django'
 Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
+
+let g:indentLine_char = '┆'   " Символ для отображения полосок отступа
+let g:indentLine_enabled = 1   " Включение плагина
 
 " Привязка F5 для запуска текущего JavaScript файла
 autocmd FileType javascript nnoremap <buffer> <F5> :w<CR>:!node %<CR>
