@@ -11,12 +11,30 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'joshdick/onedark.vim', {'branch': 'main', 'tag': 'one-dark-warm'}
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'akinsho/bufferline.nvim'
+Plug 'nvim-tree/nvim-web-devicons' " для иконок файлов
 
 " Using Vim-Plug
 Plug 'navarasu/onedark.nvim'
 "Plug 'tpope/vim-django'
 Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
+
+"bufferline
+lua << EOF
+require("bufferline").setup{
+  options = {
+    diagnostics = "nvim_lsp",
+    separator_style = "slant", -- стиль разделителя, можно поменять на "thin", "slant", или другой
+    show_buffer_close_icons = true,
+    show_close_icon = false,
+    always_show_bufferline = true,
+  }
+}
+EOF
+
+nnoremap <silent> <Tab> :BufferLineCycleNext<CR>
+nnoremap <silent> <S-Tab> :BufferLineCyclePrev<CR>
 
 let g:indentLine_char = '┆'   " Символ для отображения полосок отступа
 let g:indentLine_enabled = 1   " Включение плагина
