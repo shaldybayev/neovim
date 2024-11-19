@@ -41,6 +41,8 @@ nnoremap <silent> <S-Tab> :BufferLineCyclePrev<CR>
 let g:minimap_width = 10  " Ширина мини-карты
 let g:minimap_auto_start = 1  " Автозапуск мини-карты
 let g:minimap_auto_start_win_enter = 1
+"Клавиша F8 вкл/выкл minimap
+"nnoremap <F8> :MinimapToggle<CR>
 
 let g:indentLine_char = '┆'   " Символ для отображения полосок отступа
 let g:indentLine_enabled = 1   " Включение плагина
