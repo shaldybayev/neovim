@@ -47,6 +47,10 @@ let g:minimap_auto_start_win_enter = 1
 " Tagbar
 nnoremap <F7> :TagbarToggle<CR>
 
+" Автосохранение через определённое время (например, 2 секунды)
+set updatetime=2000  " время в миллисекундах
+autocmd CursorHold,CursorHoldI * silent! write
+
 let g:indentLine_char = '┆'   " Символ для отображения полосок отступа
 let g:indentLine_enabled = 1   " Включение плагина
 
