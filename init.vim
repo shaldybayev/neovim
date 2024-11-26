@@ -14,7 +14,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-tree/nvim-web-devicons' " для иконок файлов
 Plug 'wfxr/minimap.vim'
-
+Plug 'preservim/tagbar'
 " Using Vim-Plug
 Plug 'navarasu/onedark.nvim'
 "Plug 'tpope/vim-django'
@@ -43,6 +43,9 @@ let g:minimap_auto_start = 1  " Автозапуск мини-карты
 let g:minimap_auto_start_win_enter = 1
 "Клавиша F8 вкл/выкл minimap
 "nnoremap <F8> :MinimapToggle<CR>
+
+" Tagbar
+nnoremap <F7> :TagbarToggle<CR>
 
 let g:indentLine_char = '┆'   " Символ для отображения полосок отступа
 let g:indentLine_enabled = 1   " Включение плагина
