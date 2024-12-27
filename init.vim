@@ -15,6 +15,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-tree/nvim-web-devicons' " для иконок файлов
 Plug 'wfxr/minimap.vim'
 Plug 'preservim/tagbar'
+Plug 'thalib360/vim-live-server'
 " Using Vim-Plug
 Plug 'navarasu/onedark.nvim'
 "Plug 'tpope/vim-django'
@@ -46,6 +47,9 @@ let g:minimap_auto_start_win_enter = 1
 
 " Tagbar
 nnoremap <F7> :TagbarToggle<CR>
+
+" StartLiveServer
+command! StartLiveServer !live-server %:p:h
 
 " Автосохранение через определённое время (например, 2 секунды)
 set updatetime=2000  " время в миллисекундах
