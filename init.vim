@@ -88,6 +88,12 @@ ino ( ()<left>
 ino [ []<left>
 ino { {}<left>
 ino {<CR> {<CR>}<ESC>O
+inoremap <C-o>( (
+inoremap <C-o>[ [
+inoremap <C-o>{ {
+inoremap <C-o>' '
+inoremap <C-o>" "
+
 
 "Активируйте плагин после загрузки плагинов
 autocmd VimEnter * CocStart
