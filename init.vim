@@ -20,6 +20,7 @@ Plug 'thalib360/vim-live-server'
 Plug 'navarasu/onedark.nvim'
 "Plug 'tpope/vim-django'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'terryma/vim-smooth-scroll'
 call plug#end()
 
 "bufferline
