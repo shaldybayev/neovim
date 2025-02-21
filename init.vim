@@ -60,7 +60,17 @@ let g:indentLine_char = '┆'   " Символ для отображения п�
 let g:indentLine_enabled = 1   " Включение плагина
 
 " Привязка F5 для запуска текущего JavaScript файла
+"autocmd FileType javascript nnoremap <buffer> <F5> :w<CR>:!node %<CR>
+
+" Привязка F5 для запуска JavaScript (Node.js)
 autocmd FileType javascript nnoremap <buffer> <F5> :w<CR>:!node %<CR>
+
+" Привязка F5 для запуска Bash-скриптов
+autocmd FileType sh nnoremap <buffer> <F5> :w<CR>:!bash %<CR>
+
+" Привязка F5 для запуска Python
+autocmd FileType python nnoremap <buffer> <F5> :w<CR>:!python %<CR>
+
 
 "colorschemes
 "colorscheme monokai
